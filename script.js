@@ -2,39 +2,47 @@
 const translations = {
     en: {
         nav: { about: 'About', skills: 'Skills', experience: 'Experience', portfolio: 'Portfolio', education: 'Education', contact: 'Contact' },
-        hero: { welcome: 'Welcome to my portfolio', name1: 'Selwan Mohammed', name2: 'Ahmed Dalal', typing: ['Architect', 'Interior Designer', 'Exterior Designer', '3D Visualization Expert'], cta: 'View Portfolio', scroll: 'SCROLL' },
+        hero: { welcome: 'Welcome to my portfolio', name1: 'Selwan Mohammed', name2: 'Ahmed Dalal', typing: ['Architect', 'Interior Designer', 'Exterior Designer', '3D Visualization Expert'], cta: 'View Portfolio', downloadCV: 'Download CV', scroll: 'SCROLL' },
         about: { label: 'Introduction', title: 'About Me', text: 'An architect with over four years of experience in architectural design and site supervision. I specialize in 3D visualization, working drawings, and transforming client requirements into creative design solutions. I am currently seeking opportunities to contribute technical expertise and innovation within a creative team.' },
         skills: { label: 'Expertise', title: 'My Skills', items: ['Revit (3D Modeling)', 'Lumion (Realistic Rendering)', 'AutoCAD (Technical Drafting)', '3ds Max (Modeling & Rendering)', 'Site Supervision', 'Client Communication'] },
-        experience: { label: 'Career', title: 'Experience', items: [
-            { date: 'Late 2024 – Present', title: 'Freelance Architect', company: 'Independent Practice', desc: 'Independent architectural and interior design, 3D modeling, and direct client coordination.' },
-            { date: '2021 – 2023', title: 'Architect', company: 'Zaman Engineering Office', desc: 'Full-time architect creating working drawings, designing façades and interiors, and supervising site execution.' },
-            { date: '2020', title: 'Architectural Intern', company: 'Zaman Engineering Office', desc: '6-month internship focused on design presentations and real-world workflows.' },
-            { date: '2019 – 2020', title: 'Teaching Assistant', company: 'UST University', desc: 'Taught Architectural Drawing and Perspective courses.' }
-        ]},
+        experience: {
+            label: 'Career', title: 'Experience', items: [
+                { date: 'Late 2024 – Present', title: 'Freelance Architect', company: 'Independent Practice', desc: 'Independent architectural and interior design, 3D modeling, and direct client coordination.' },
+                { date: '2021 – 2023', title: 'Architect', company: 'Zaman Engineering Office', desc: 'Full-time architect creating working drawings, designing façades and interiors, and supervising site execution.' },
+                { date: '2020', title: 'Architectural Intern', company: 'Zaman Engineering Office', desc: '6-month internship focused on design presentations and real-world workflows.' },
+                { date: '2019 – 2020', title: 'Teaching Assistant', company: 'UST University', desc: 'Taught Architectural Drawing and Perspective courses.' }
+            ]
+        },
         portfolio: { label: 'Selected Works', title: 'Portfolio', filters: ['All Projects', 'Interior Design', 'Exterior Facades', '3D Rendering'], projects: ['Modern Bedroom', 'Contemporary Villa', 'Luxury Living Room', 'Residential Villa', 'Luxury Bathroom', 'Outdoor Terrace'] },
-        education: { label: 'Qualifications', title: 'Education & Certifications', items: [
-            { year: '2019', title: "Bachelor's in Architecture", school: 'Science and Technology University (UST), Sana\'a' },
-            { year: '2024', title: 'Site Supervision Course', school: 'Including Nabni Insulation Workshop' }
-        ]},
+        education: {
+            label: 'Qualifications', title: 'Education & Certifications', items: [
+                { year: '2019', title: "Bachelor's in Architecture", school: 'Science and Technology University (UST), Sana\'a' },
+                { year: '2024', title: 'Site Supervision Course', school: 'Including Nabni Insulation Workshop' }
+            ]
+        },
         contact: { label: 'Get In Touch', title: 'Contact Me', heading: "Let's Work Together", text: "Have a project in mind? I'd love to hear about it.", email: 'Email', location: 'Location', locationVal: "Sana'a, Yemen", form: { name: 'Your Name', email: 'Your Email', subject: 'Subject', message: 'Your Message', send: 'Send Message', sent: 'Message Sent!' } },
         footer: '© 2024 Selwan Mohammed Ahmed Dalal. All Rights Reserved.'
     },
     ar: {
         nav: { about: 'نبذة عني', skills: 'المهارات', experience: 'الخبرات', portfolio: 'الأعمال', education: 'التعليم', contact: 'تواصل' },
-        hero: { welcome: 'مرحباً بكم في معرض أعمالي', name1: 'سلوان محمد', name2: 'أحمد دلال', typing: ['مهندس معماري', 'مصمم داخلي', 'مصمم خارجي', 'خبير تصور ثلاثي الأبعاد'], cta: 'عرض الأعمال', scroll: 'تصفح' },
+        hero: { welcome: 'مرحباً بكم في معرض أعمالي', name1: 'سلوان محمد', name2: 'أحمد دلال', typing: ['مهندس معماري', 'مصمم داخلي', 'مصمم خارجي', 'خبير تصور ثلاثي الأبعاد'], cta: 'عرض الأعمال', downloadCV: 'تحميل السيرة الذاتية', scroll: 'تصفح' },
         about: { label: 'مقدمة', title: 'نبذة عني', text: 'مهندس معماري يتمتع بخبرة تزيد عن أربع سنوات في التصميم المعماري والإشراف على المواقع. أتخصص في التصور ثلاثي الأبعاد والرسومات التنفيذية وتحويل متطلبات العملاء إلى حلول تصميم إبداعية. أبحث حالياً عن فرص للمساهمة بخبرتي التقنية والابتكار ضمن فريق إبداعي.' },
         skills: { label: 'الخبرات', title: 'مهاراتي', items: ['ريفيت (النمذجة ثلاثية الأبعاد)', 'لوميون (الواقعية)', 'أوتوكاد (الرسم التقني)', '3ds Max (النمذجة والعرض)', 'إشراف الموقع', 'التواصل مع العملاء'] },
-        experience: { label: 'المسيرة المهنية', title: 'الخبرات', items: [
-            { date: 'أواخر 2024 – حتى الآن', title: 'مهندس معماري مستقل', company: 'عمل حر', desc: 'تصميم معماري وداخلي مستقل، نمذجة ثلاثية الأبعاد، والتنسيق المباشر مع العملاء.' },
-            { date: '2021 – 2023', title: 'مهندس معماري', company: 'مكتب زمان الهندسي', desc: 'مهندس بدوام كامل لإنشاء الرسومات التنفيذية وتصميم الواجهات والديكورات الداخلية والإشراف على التنفيذ.' },
-            { date: '2020', title: 'متدرب معماري', company: 'مكتب زمان الهندسي', desc: 'تدريب لمدة 6 أشهر يركز على العروض التقديمية للتصميم وسير العمل الفعلي.' },
-            { date: '2019 – 2020', title: 'مساعد تدريس', company: 'جامعة العلوم والتكنولوجيا', desc: 'تدريس مقررات الرسم المعماري والمنظور.' }
-        ]},
+        experience: {
+            label: 'المسيرة المهنية', title: 'الخبرات', items: [
+                { date: 'أواخر 2024 – حتى الآن', title: 'مهندس معماري مستقل', company: 'عمل حر', desc: 'تصميم معماري وداخلي مستقل، نمذجة ثلاثية الأبعاد، والتنسيق المباشر مع العملاء.' },
+                { date: '2021 – 2023', title: 'مهندس معماري', company: 'مكتب زمان الهندسي', desc: 'مهندس بدوام كامل لإنشاء الرسومات التنفيذية وتصميم الواجهات والديكورات الداخلية والإشراف على التنفيذ.' },
+                { date: '2020', title: 'متدرب معماري', company: 'مكتب زمان الهندسي', desc: 'تدريب لمدة 6 أشهر يركز على العروض التقديمية للتصميم وسير العمل الفعلي.' },
+                { date: '2019 – 2020', title: 'مساعد تدريس', company: 'جامعة العلوم والتكنولوجيا', desc: 'تدريس مقررات الرسم المعماري والمنظور.' }
+            ]
+        },
         portfolio: { label: 'أعمال مختارة', title: 'معرض الأعمال', filters: ['جميع المشاريع', 'تصميم داخلي', 'واجهات خارجية', 'عرض ثلاثي الأبعاد'], projects: ['غرفة نوم عصرية', 'فيلا معاصرة', 'غرفة معيشة فاخرة', 'فيلا سكنية', 'حمام فاخر', 'تراس خارجي'] },
-        education: { label: 'المؤهلات', title: 'التعليم والشهادات', items: [
-            { year: '2019', title: 'بكالوريوس هندسة معمارية', school: 'جامعة العلوم والتكنولوجيا، صنعاء' },
-            { year: '2024', title: 'دورة إشراف المواقع', school: 'بما في ذلك ورشة عزل نبني' }
-        ]},
+        education: {
+            label: 'المؤهلات', title: 'التعليم والشهادات', items: [
+                { year: '2019', title: 'بكالوريوس هندسة معمارية', school: 'جامعة العلوم والتكنولوجيا، صنعاء' },
+                { year: '2024', title: 'دورة إشراف المواقع', school: 'بما في ذلك ورشة عزل نبني' }
+            ]
+        },
         contact: { label: 'تواصل معي', title: 'اتصل بي', heading: 'لنعمل معاً', text: 'هل لديك مشروع في ذهنك؟ يسعدني سماع ذلك.', email: 'البريد الإلكتروني', location: 'الموقع', locationVal: 'صنعاء، اليمن', form: { name: 'اسمك', email: 'بريدك الإلكتروني', subject: 'الموضوع', message: 'رسالتك', send: 'إرسال الرسالة', sent: 'تم الإرسال!' } },
         footer: '© 2024 سلوان محمد أحمد دلال. جميع الحقوق محفوظة.'
     }
@@ -130,7 +138,7 @@ function initThemeToggle() {
 function updateThemeIcon(theme) {
     const btn = document.querySelector('.theme-toggle');
     if (!btn) return;
-    btn.innerHTML = theme === 'dark' 
+    btn.innerHTML = theme === 'dark'
         ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg><span>Dark</span>'
         : '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg><span>Light</span>';
 }
@@ -153,32 +161,33 @@ function updateContent() {
     const t = translations[currentLang];
     const btn = document.querySelector('.lang-toggle');
     if (btn) btn.innerHTML = currentLang === 'en' ? '🌐 <span>العربية</span>' : '🌐 <span>English</span>';
-    
+
     // Navigation
     document.querySelectorAll('[data-nav]').forEach(el => {
         const key = el.dataset.nav;
         if (t.nav[key]) el.textContent = t.nav[key];
     });
-    
+
     // Hero
     const heroSub = document.querySelector('.hero-subtitle');
     const heroTitle = document.querySelector('.hero-title');
-    const heroBtn = document.querySelector('.hero .btn');
+    const heroBtns = document.querySelectorAll('.hero-buttons .btn');
     const scrollText = document.querySelector('.scroll-indicator span:last-child');
     if (heroSub) heroSub.textContent = t.hero.welcome;
     if (heroTitle) heroTitle.innerHTML = `<span>${t.hero.name1}</span><br>${t.hero.name2}`;
-    if (heroBtn) heroBtn.textContent = t.hero.cta;
+    if (heroBtns[0]) heroBtns[0].textContent = t.hero.cta;
+    if (heroBtns[1]) heroBtns[1].textContent = t.hero.downloadCV;
     if (scrollText) scrollText.textContent = t.hero.scroll;
-    
+
     // About
     updateSection('about', t.about);
-    
+
     // Skills
     updateSection('skills', t.skills);
     document.querySelectorAll('.skill-name').forEach((el, i) => {
         if (t.skills.items[i]) el.textContent = t.skills.items[i];
     });
-    
+
     // Experience
     updateSection('experience', t.experience);
     document.querySelectorAll('.timeline-item').forEach((item, i) => {
@@ -190,7 +199,7 @@ function updateContent() {
             item.querySelector('.timeline-desc').textContent = data.desc;
         }
     });
-    
+
     // Portfolio
     updateSection('portfolio', t.portfolio);
     document.querySelectorAll('.filter-btn').forEach((btn, i) => {
@@ -199,7 +208,7 @@ function updateContent() {
     document.querySelectorAll('.project-title').forEach((el, i) => {
         if (t.portfolio.projects[i]) el.textContent = t.portfolio.projects[i];
     });
-    
+
     // Education
     updateSection('education', t.education);
     document.querySelectorAll('.education-card').forEach((card, i) => {
@@ -210,7 +219,7 @@ function updateContent() {
             card.querySelector('.education-school').textContent = data.school;
         }
     });
-    
+
     // Contact
     updateSection('contact', t.contact);
     const contactH3 = document.querySelector('.contact-info h3');
@@ -230,7 +239,7 @@ function updateContent() {
     });
     const submitBtn = document.querySelector('.submit-btn');
     if (submitBtn && !submitBtn.classList.contains('sent')) submitBtn.textContent = t.contact.form.send;
-    
+
     // Footer
     const footer = document.querySelector('footer p');
     if (footer) footer.innerHTML = t.footer.replace('Selwan Mohammed Ahmed Dalal', '<span>Selwan Mohammed Ahmed Dalal</span>').replace('سلوان محمد أحمد دلال', '<span>سلوان محمد أحمد دلال</span>');
@@ -256,7 +265,7 @@ function initTypingEffect() {
     if (!el) return;
     const texts = translations[currentLang].hero.typing;
     let textIdx = 0, charIdx = 0, isDeleting = false;
-    
+
     function type() {
         const current = texts[textIdx];
         if (isDeleting) {
@@ -266,7 +275,7 @@ function initTypingEffect() {
             el.innerHTML = current.substring(0, charIdx + 1) + '<span class="cursor">|</span>';
             charIdx++;
         }
-        
+
         let speed = isDeleting ? 50 : 100;
         if (!isDeleting && charIdx === current.length) {
             speed = 2000;
@@ -286,7 +295,7 @@ function initPortfolioFilter() {
     const btns = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('.project-card');
     const filters = ['all', 'interior', 'exterior', 'rendering'];
-    
+
     btns.forEach((btn, i) => {
         btn.addEventListener('click', () => {
             btns.forEach(b => b.classList.remove('active'));
